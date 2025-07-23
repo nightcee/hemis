@@ -4,7 +4,7 @@ sudo apt install unzip -y
 echo "unzip installed"
 echo "Fetching latest Hemis version"
 wget --quiet https://raw.githubusercontent.com/nightcee/hemis/main/Hemis-Linux.zip && sudo unzip Hemis-Linux.zip -d /usr/local/bin
-wget --quiet https://github.com/Hemis-Blockchain/Hemis/releases/download/1.1.6/Hemis-params.zip && unzip Hemis-params.zip -d ~/.Hemis-params
+wget --quiet https://raw.githubusercontent.com/nightcee/hemis/main/Hemis-params.zip && unzip Hemis-params.zip -d ~/.Hemis-params
 echo "Hemis succesfully installed and added daemon=1 to config"
 mkdir -p ~/.Hemis
 printf '%s\n' 'daemon=1' > ~/.Hemis/Hemis.conf
